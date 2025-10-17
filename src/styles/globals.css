@@ -1,9 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap");
-
+html,
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #0f0f0f;
-  color: #f2f2f2;
-  scroll-behavior: smooth;
+  padding: 0;
+  background-color: #0d0d0d; /* same as header */
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  transition: none !important;
+}
+
+/* Prevent layout jump while Next Image loads */
+img,
+.next-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: Disable animations before hydration */
+[data-nextjs-loading] * {
+  transition: none !important;
+  animation: none !important;
 }

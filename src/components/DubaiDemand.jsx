@@ -1106,6 +1106,11 @@ export default function DubaiDemand() {
 
         /* Tablet Portrait - Enhanced for iPads */
         @media (min-width: 601px) and (max-width: 768px) {
+          .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+          }
           .dubai-demand {
             padding: 80px 30px;
           }
@@ -1166,6 +1171,12 @@ export default function DubaiDemand() {
 
         /* Large Mobile - Enhanced for phones */
         @media (min-width: 481px) and (max-width: 600px) {
+          .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+          }
+
           .dubai-demand {
             padding: 70px 25px;
           }
@@ -1242,6 +1253,12 @@ export default function DubaiDemand() {
 
         /* Mobile Portrait - Enhanced for small phones */
         @media (min-width: 376px) and (max-width: 480px) {
+          .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+          }
+
           .dubai-demand {
             padding: 60px 20px;
           }
