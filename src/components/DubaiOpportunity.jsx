@@ -554,6 +554,7 @@ export default function DubaiOpportunity() {
 
           .small-image {
             border-radius: 14px;
+            width: fit-content;
           }
 
           .feature-card {
