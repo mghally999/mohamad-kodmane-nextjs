@@ -7,6 +7,11 @@ import HeroVideo from "@/components/HeroVideo";
 import OffPlan from "@/components/OffPlan";
 import DubaiOpportunity from "@/components/DubaiOpportunity";
 import DubaiDemand from "@/components/DubaiDemand";
+import SuccessStories from "@/components/SuccessStories";
+import RentalReturns from "@/components/RentalReturns";
+import MiniCallbackForm from "@/components/MiniCallbackForm";
+import AboutMohamadKodmane from "@/components/AboutMohamadKodmane";
+import FreeServices from "@/components/FreeServices";
 
 export default function HomePage() {
   return (
@@ -15,6 +20,11 @@ export default function HomePage() {
       <OffPlan />
       <DubaiOpportunity />
       <DubaiDemand />
+      <SuccessStories />
+      <RentalReturns />
+      <MiniCallbackForm />
+      <AboutMohamadKodmane />
+      <FreeServices />
       {/* <Hero /> */}
       {/* <About /> */}
       {/* <ProjectsList /> */}
