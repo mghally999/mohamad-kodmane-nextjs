@@ -21,3 +21,10 @@ img,
   transition: none !important;
   animation: none !important;
 }
+
+@media (max-width: 768px) {
+  .Header_container__O36kb {
+    padding: 25px !important;
+    margin-top: 100px !important;
+  }
+}
