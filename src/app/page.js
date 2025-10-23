@@ -12,19 +12,26 @@ import RentalReturns from "@/components/RentalReturns";
 import MiniCallbackForm from "@/components/MiniCallbackForm";
 import AboutMohamadKodmane from "@/components/AboutMohamadKodmane";
 import FreeServices from "@/components/FreeServices";
+import MissionVision from "@/components/MissionVision";
+import TopHeader from "@/components/TopHeader";
+import CoreValues from "@/components/CoreValues";
+import Header from "@/components/Header";
 
 export default function HomePage() {
   return (
     <>
+      <Header />
       <HeroVideo />
-      <OffPlan />
-      <DubaiOpportunity />
-      <DubaiDemand />
-      <SuccessStories />
-      <RentalReturns />
-      <MiniCallbackForm />
+      <MissionVision />
       <AboutMohamadKodmane />
+      <CoreValues />
       <FreeServices />
+      <MiniCallbackForm />
+      {/* <OffPlan /> */}
+      {/* <DubaiOpportunity /> */}
+      {/* <DubaiDemand /> */}
+      {/* <SuccessStories /> */}
+      {/* <RentalReturns /> */}
       {/* <Hero /> */}
       {/* <About /> */}
       {/* <ProjectsList /> */}

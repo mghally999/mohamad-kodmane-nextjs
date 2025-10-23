@@ -11,79 +11,62 @@ export default function Header() {
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.branding}>
-            <Image
-              src="/logo.jpg"
-              alt="Mohamad Kodmane"
-              width={130}
-              height={130}
-              className={styles.logo}
-              style={{
-                borderRadius: "50%",
-                objectFit: "cover",
-                border: "2px solid rgba(215,180,106,0.8)",
-                boxShadow:
-                  "0 0 40px rgba(215,180,106,0.3), inset 0 0 30px rgba(215,180,106,0.2)",
-                backgroundColor: "#111",
-              }}
-            />
-          </div>
+          <div className={styles.textContent}>
+            <h1 className={styles.title}>
+              MOHAMAD <span>KODMANE</span>
+            </h1>
 
-          <h1 className={styles.title}>
-            MOHAMAD <span>KODMANE</span>
-          </h1>
+            <h2 className={styles.subtitle}>Real Estate Broker</h2>
 
-          <p className={styles.tagline}>
-            Crafting timeless spaces of elegance and investment value — where
-            architecture meets artistry and Dubai's skyline redefines luxury.
-          </p>
+            <p className={styles.tagline}>
+              Dubai’s Premier Real Estate Broker for Luxury Investments and High
+              Returns.{" "}
+            </p>
 
-          <div className={styles.stats}>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>₿2.8B+</div>
-              <div className={styles.statLabel}>Portfolio Value</div>
+            <div className={styles.stats}>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>₿2.8B+</div>
+                <div className={styles.statLabel}>Portfolio Value</div>
+              </div>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>75+</div>
+                <div className={styles.statLabel}>Luxury Projects</div>
+              </div>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>5+</div>
+                <div className={styles.statLabel}>Years Excellence</div>
+              </div>
             </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>75+</div>
-              <div className={styles.statLabel}>Luxury Projects</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>18</div>
-              <div className={styles.statLabel}>Years Excellence</div>
+
+            <div className={styles.cta}>
+              <button className={`${styles.ctaBtn} ${styles.primary}`}>
+                View Portfolio
+              </button>
+              <button className={`${styles.ctaBtn} ${styles.secondary}`}>
+                Start Your Legacy
+              </button>
             </div>
           </div>
 
-          <div className={styles.cta}>
-            <button className={`${styles.ctaBtn} ${styles.primary}`}>
-              View Portfolio
-            </button>
-            <button className={`${styles.ctaBtn} ${styles.secondary}`}>
-              Start Your Legacy
-            </button>
-          </div>
-        </div>
-
-        <div className={styles.portraitWrapper}>
-          <div className={styles.portrait}>
-            <Image
-              src="/owner-hero.png"
-              alt="Mohamad Kodmane"
-              fill
-              className={styles.ownerImage}
-              onError={(e) => {
-                const fallback = document.createElement("div");
-                fallback.innerHTML = "MOHAMAD KODMANE";
-                fallback.style.cssText = `
-                  width:100%;height:100%;display:flex;align-items:center;
-                  justify-content:center;color:#D7B46A;font-size:2rem;
-                  font-weight:700;background:rgba(255,255,255,0.05);
-                  font-family:'Playfair Display', serif;
-                `;
-                e.target.parentNode.appendChild(fallback);
-                e.target.style.display = "none";
-              }}
-            />
-            <div className={styles.portraitGlow}></div>
+          <div className={styles.logoSection}>
+            <div className={styles.logoWrapper}>
+              <Image
+                src="/logo.jpg"
+                alt="Mohamad Kodmane"
+                width={280}
+                height={280}
+                className={styles.logo}
+                style={{
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  border: "3px solid rgba(215,180,106,0.8)",
+                  boxShadow:
+                    "0 0 60px rgba(215,180,106,0.4), inset 0 0 40px rgba(215,180,106,0.3)",
+                  backgroundColor: "#111",
+                }}
+              />
+              <div className={styles.logoGlow}></div>
+            </div>
           </div>
         </div>
       </div>
