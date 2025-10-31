@@ -311,14 +311,6 @@ export default function TopHeader() {
         <div className={styles.backgroundOverlay}></div>
 
         <div className={styles.container}>
-          {/* Logo */}
-          <div className={styles.logo}>
-            <Link href="/" className={styles.logoLink}>
-              <span className={styles.logoText}>SODHIA</span>
-              <span className={styles.logoSubtitle}>REALTY</span>
-            </Link>
-          </div>
-
           {/* Desktop Navigation */}
           <nav className={styles.desktopNav}>
             {navItems.map((item) => (
@@ -629,10 +621,7 @@ export default function TopHeader() {
         <div className={styles.mobileNavBackground}></div>
         <div className={styles.mobileNavContainer}>
           <div className={styles.mobileNavHeader}>
-            <div className={styles.mobileLogo}>
-              <span className={styles.mobileLogoText}>SODHIA</span>
-              <span className={styles.mobileLogoSubtitle}>REALTY</span>
-            </div>
+            <div className={styles.mobileLogo}></div>
             <button
               className={styles.mobileCloseButton}
               onClick={() => setIsMobileMenuOpen(false)}
