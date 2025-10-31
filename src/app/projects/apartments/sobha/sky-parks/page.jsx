@@ -4,6 +4,7 @@ import CityProximity from "@/components/projects/CityProximity";
 import FloorPlanShowcase from "@/components/projects/FloorPlanShowcase";
 import ProjectHero from "@/components/projects/ProjectHero";
 import ProjectIntro from "@/components/projects/ProjectIntro";
+import ProjectsFooter from "@/components/projects/ProjectsFooter";
 import VisualSymphony from "@/components/projects/VisualSymphony";
 
 export default function ProjectPage() {
@@ -16,6 +17,7 @@ export default function ProjectPage() {
       <AmenitiesShowcase />
       <CityProximity />
       <MiniCallbackForm />
+      <ProjectsFooter />
     </main>
   );
 }
