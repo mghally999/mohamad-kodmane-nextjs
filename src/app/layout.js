@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "../components/Footer";
 import TopHeader from "@/components/TopHeader";
+// import MegaMenu from "@/components/MegaMenu";
 
 export const metadata = {
   title: "Dubai Real Estate Experts | Market Insights & Investment Strategies",
