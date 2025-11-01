@@ -329,7 +329,7 @@ export default function TopHeader() {
                     <span className={styles.dropdownArrow}>▼</span>
                   </button>
                 ) : (
-                  <Link
+                  <a
                     href={item.href}
                     className={`${styles.navLink} ${
                       item.type === "cta" ? styles.ctaButton : ""
@@ -339,7 +339,7 @@ export default function TopHeader() {
                     {item.type === "cta" && (
                       <span className={styles.ctaGlow}></span>
                     )}
-                  </Link>
+                  </a>
                 )}
               </div>
             ))}
@@ -440,7 +440,7 @@ export default function TopHeader() {
                       </div>
                       <div className={styles.projectsList}>
                         {selectedDeveloper.projects.map((project) => (
-                          <Link
+                          <a
                             key={project.id}
                             href={`/projects/${selectedCategory.slug}/${selectedDeveloper.slug}/${project.slug}`}
                             className={`${styles.projectItem} ${
@@ -459,7 +459,7 @@ export default function TopHeader() {
                               </p>
                             </div>
                             <span className={styles.projectArrow}>→</span>
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     </div>
@@ -470,7 +470,7 @@ export default function TopHeader() {
                     <div className={styles.imagePreviewContent}>
                       {selectedProject ? (
                         <>
-                          <Link
+                          <a
                             href={`/projects/${selectedCategory.slug}/${selectedDeveloper.slug}/${selectedProject.slug}`}
                             className={styles.previewImageLink}
                           >
@@ -480,7 +480,7 @@ export default function TopHeader() {
                                 backgroundImage: `url(${selectedProject.image})`,
                               }}
                             ></div>
-                          </Link>
+                          </a>
                           <div className={styles.previewInfo}>
                             <h3 className={styles.previewTitle}>
                               {selectedProject.title}
@@ -497,13 +497,13 @@ export default function TopHeader() {
                               </span>
                               <span className={styles.stat}>Luxury</span>
                             </div>
-                            <Link
+                            <a
                               href={`/projects/${selectedCategory.slug}/${selectedDeveloper.slug}/${selectedProject.slug}`}
                               className={styles.previewButton}
                             >
                               View Project Details
                               <span className={styles.buttonArrow}>→</span>
-                            </Link>
+                            </a>
                           </div>
                         </>
                       ) : selectedDeveloper ? (
@@ -743,7 +743,7 @@ export default function TopHeader() {
                                           className={styles.mobileProjectsList}
                                         >
                                           {developer.projects.map((project) => (
-                                            <Link
+                                            <a
                                               key={project.id}
                                               href={`/projects/${category.slug}/${developer.slug}/${project.slug}`}
                                               className={
@@ -779,7 +779,7 @@ export default function TopHeader() {
                                                   →
                                                 </span>
                                               </div>
-                                            </Link>
+                                            </a>
                                           ))}
                                         </div>
                                       )}
@@ -794,7 +794,7 @@ export default function TopHeader() {
                     )}
                   </div>
                 ) : (
-                  <Link
+                  <a
                     href={item.href}
                     className={`${styles.mobileNavLink} ${
                       item.type === "cta" ? styles.mobileCta : ""
@@ -805,7 +805,7 @@ export default function TopHeader() {
                     {item.type === "cta" && (
                       <span className={styles.mobileCtaIcon}>✨</span>
                     )}
-                  </Link>
+                  </a>
                 )}
               </div>
             ))}
